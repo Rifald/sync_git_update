@@ -4,7 +4,7 @@ import requests
 import git
 dir_path = os.path.dirname(os.path.realpath(__file__))
 print(dir_path)
-currentVersion = "v0.4"
+currentVersion = "v0.5"
 import requests
 r = requests.get('https://raw.githubusercontent.com/Rifald/sync_git_update/main/version.txt')
 data = r.text
@@ -35,7 +35,7 @@ else:
     canvas1 = tk.Canvas(root, width = 300, height = 300)
     canvas1.pack()
     label1 = tk.Label(root, text= 'Please restart application', fg='blue', font=('helvetica', 12, 'bold'))
-    canvas1.create_window(150, 200, window=label1)
+    canvas1.create_window(150, 150, window=label1)
     root.mainloop()
 
 
