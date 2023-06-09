@@ -4,13 +4,14 @@ import requests
 import git
 dir_path = os.path.dirname(os.path.realpath(__file__))
 print(dir_path)
-currentVersion = "v0.3"
+currentVersion = "v0.4"
 import requests
 r = requests.get('https://raw.githubusercontent.com/Rifald/sync_git_update/main/version.txt')
 data = r.text
+print(data)
 
 def hello ():  
-    label1 = tk.Label(root, text= 'Hello World! v1.0 \n' + check, fg='blue', font=('helvetica', 12, 'bold'))
+    label1 = tk.Label(root, text= 'Hello World! v0.4 \n' + check, fg='blue', font=('helvetica', 12, 'bold'))
     canvas1.create_window(150, 200, window=label1)
 
 if (data == currentVersion):
